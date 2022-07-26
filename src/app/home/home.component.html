@@ -1,0 +1,10 @@
+<div id="uno">
+<h1>Home works!</h1>
+<form #customerForm="ngForm" (ngSubmit)="onSubmit(customerForm)">
+    Name: <input type="text" [(ngModel)]="customerName" name="Name"><br>
+    Email: <input type="text" [(ngModel)]="customerEmail" name="Email"><br>
+    UserName: <input type="text" [(ngModel)]="customerUserName" name="UserName"><br>
+    Password: <input type="password" [(ngModel)]="customerPassword" name="Password"><br>
+    <button type="submit" [disabled]="!customerForm.form.valid">Join us!</button>
+</form>
+</div>
